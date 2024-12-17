@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lys tema variabler */
+:root {
+  --ion-background-color: #ffffff; /* Hovedbaggrund */
+  --ion-text-color: #000000;
+
+  /* Toolbar (AppNavbar) farver */
+  --ion-toolbar-background: #f8f8f8; /* Den gamle navbar baggrundsfarve */
+  --ion-toolbar-text-color: #000000;
+
+  /* Tabbar farver */
+  --ion-tab-bar-background: #f8f8f8; /* Den gamle tab bar baggrundsfarve */
+  --ion-tab-bar-text-color: #8e8e93;
+  --ion-tab-bar-text-color-active: #000000;
+}
+
+/* Mørkt tema variabler */
+.dark {
+  --ion-background-color: #121212; /* Mørk hovedbaggrund */
+  --ion-text-color: #ffffff;
+
+  /* Toolbar (AppNavbar) farver */
+  --ion-toolbar-background: #1e1e1e; /* Den gamle mørke navbar baggrundsfarve */
+  --ion-toolbar-text-color: #ffffff;
+
+  /* Tabbar farver */
+  --ion-tab-bar-background: #1e1e1e; /* Den gamle mørke tab bar baggrundsfarve */
+  --ion-tab-bar-text-color: #cccccc;
+  --ion-tab-bar-text-color-active: #ffffff;
+}
+
+/* Anvend variabler til Ionic komponenter */
+ion-app {
+  background-color: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+ion-toolbar {
+  background-color: var(--ion-toolbar-background);
+  color: var(--ion-toolbar-text-color);
+}
+
+ion-tab-bar {
+  background-color: var(--ion-tab-bar-background);
+}
+
+ion-tab-bar ion-tab-button {
+  color: var(--ion-tab-bar-text-color);
+}
+
+ion-tab-bar ion-tab-button.activated,
+ion-tab-bar ion-tab-button.selected {
+  color: var(--ion-tab-bar-text-color-active);
+}
+
+html, body, #app {
+  @apply bg-white dark:bg-gray-900 m-0 p-0 h-full w-full;
+}
+
+.btn-primary {
+  @apply bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg shadow hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400;
+}

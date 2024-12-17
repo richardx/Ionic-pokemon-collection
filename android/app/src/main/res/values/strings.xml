@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">pokemon-collection</string>
+    <string name="title_activity_main">pokemon-collection</string>
+    <string name="package_name">com.madsrichard.pokemoncollection</string>
+    <string name="custom_url_scheme">com.madsrichard.pokemoncollection</string>
+</resources>
